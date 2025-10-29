@@ -126,10 +126,10 @@ def process_conversations():
                     result_json["conversation_id"] = conv_id
                     orders_store.append(result_json)
                     processed_ids.add(conv_id)
-                    print(f"✅ Processed and stored order {conv_id}")
+                    print(f"Processed and stored order {conv_id}")
 
         except Exception as e:
-            print("⚠️ Error fetching or processing conversations:", e)
+            print("Error fetching or processing conversations:", e)
 
         time.sleep(1)  # Poll interval
 
